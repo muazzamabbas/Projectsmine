@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        
+	        <meta name="keywords" content="" />
+	      <meta name="description" content="" />
+
+	      <link href="../Content/bootstrap.min.css" rel="stylesheet" type="text/css">
+	      <link href="../Content/templatemo_style.css" rel="stylesheet" type="text/css">
+          <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css">
+    	  <link rel="stylesheet" href="../Content/flexslider.css" type="text/css" media="screen" />
+
+        <link href="~/fonts" rel='stylesheet' type='text/css'>
+
+        <script src="../Scripts/jquery.flexslider.js"></script>
+        <script src="../Scripts/modernizr.js"></script>
+
+
+        <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../Scripts/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../Scripts/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+      $(function () {
+          SyntaxHighlighter.all();
+      });
+      $(window).load(function () {
+          $('.flexslider').flexslider({
+              animation: "slide",
+              start: function (slider) {
+                  $('body').removeClass('loading');
+              }
+          });
+      });
+  </script>
+ 
+
+
+    </head>
+
+    <body class="templatemo_juice_bg">
+	<div id="main_container">
+		<div class="container" id="home">
+			<div class="row col-wrap">			 
+				<div id="left_container" class="col col-md-3 col-sm-12">
+                	<div class="templatemo_logo">
+						@*<a href="#"><img src="../Images/templatemo_logo.png" alt="Botany Theme"></a>*@
+                        <a href="#"><img src="../Images/prof.jpg" width="240" height="130" alt="Muazzam Abbas"></a>
+                        <h3><a href="#">Muazzam Abbas</a></h3>
+			            <span>Studying Computer Information System</span>
+					</div>
+					<nav id="main_nav">
+						<ul class="nav">
+							<li class="active"><a href="/Home/Index">Home</a></li>
+							<li><a href="/Home/About">About Me</a></li>
+							<li><a href="/Home/porfolio">Portfolio</a></li>
+							<li><a href="/Home/Contact">Contact Me</a></li>
+						</ul>
+					</nav> <!-- nav -->	
+					
+
+					<div>
+						<a rel="nofollow" href="https://www.facebook.com/muazzam.abbas.98"><img src="~/images/facebook.png" alt="Follow me on FaceBook"></a>
+						<a href="http://pk.linkedin.com/pub/muazzam-abbas/5b/a5b/55/"><img src="../Images/linkedin.png" width="26" height="26" alt="Follow me on LinkedIn"></a>
+						<a href="https://plus.google.com/112842971646267649686/posts"><img src="../Images/gp.png" width="26" height="26" alt="Follow me on Google Plus"></a>
+					</div>
+				</div>
+               
+				<div id="right_container" class="col col-md-9 col-sm-12">
+                
+					<div class="row">
+                    	<div class="col col-md-12">
+                        
+                    		<h2>Welcome to Projectsmine</h2> 
+
+                            <div class="flexslider">
+                              <ul class="slides">
+                                <li><img src="../Images/and.jpg" width="800" height="300" alt="slide 1" /></li>
+                                <li><img src="../Images/net.png" width="800" height="300" alt="slide 2" /></li>
+                                <li><img src="../Images/java.jpg" width="800" height="300" alt="slide 3" /></li>
+                              </ul>
+                            </div>
+                            
+        				</div>
+                    </div>
+
+                          @RenderBody()
+
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+
+
+       
+        
+            <footer class="row credit">
+				<div class="col col-md-12">
+					<div id="templatemo_footer">
+						Copyright © 2084 <a href="#">Company Name</a> <!-- Credit: www.templatemo.com -->
+					</div>
+				</div>
+			</footer>
+        
+
+         
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
